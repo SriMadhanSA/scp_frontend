@@ -1,0 +1,34 @@
+.cloths {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: cloths-appear 1s ease-out forwards;
+}
+
+.clothsLoading {
+  text-align: center;
+  color: white;
+}
+
+.clothsError {
+  text-align: center;
+  color: red;
+}
+
+.cloths ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes cloths-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
